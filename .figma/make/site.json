@@ -1,0 +1,14 @@
+{
+  "title": "Walking Quests",
+  "description": "Engage in unique walking mini-quests with a mobile-friendly design, track your adventures on a calendar, and celebrate your achievements with fun animations.",
+  "icons": {
+    "icon": "/favicon.svg"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

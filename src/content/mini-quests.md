@@ -1,0 +1,105 @@
+# Mini quests
+
+Edit the entries below to change the daily quest pool. Keep one quest per line in
+the format `- emoji | quest text`.
+
+- 🧭 | Pick a cardinal direction and walk that way for 15 minutes.
+- 👃 | Walk until you smell food. Then find where it's coming from.
+- 🌄 | Walk to a scenic view you haven't seen before and take a picture.
+- 🐦 | Walk until you hear a bird, then follow its sound.
+- 🪵 | Find something in nature that's perfectly round.
+- ☁️ | Walk to a spot where you can see the whole sky above you.
+- 🗺️ | Turn at every street that starts with a vowel for 20 minutes.
+- 🌊 | Walk toward the sound of water — or imagine you can hear it.
+- 🌿 | Find three different shades of green on your walk.
+- 🪨 | Walk until you find a stone worth keeping in your pocket.
+- 🌙 | Walk in a direction you've never walked before until something surprises you.
+- 🎨 | Find the most interesting colour on your walk and photograph it.
+- 🏚️ | Walk to the oldest-looking building you can find nearby.
+- 🌺 | Walk until you spot something blooming, even in an unexpected place.
+- 🦋 | Walk slowly for 10 minutes, noticing only things smaller than your hand.
+- ⭐ | Walk to an open space and stand still for 2 minutes, just observing.
+- 🧱 | Explore a street or alley you've always passed but never entered.
+- 🌫️ | Walk in a straight line until your path is blocked, then return a different way.
+- 🍂 | Walk until you find a tree whose leaves are changing or already fallen.
+- 🔮 | Let a coin flip decide your route — heads: left, tails: right, for 20 minutes.
+- 🚪 | Take the first door, gate, or path you have never noticed before.
+- 🪟 | Find a window display that tells a tiny story.
+- 🎵 | Walk for one song without looking at your phone.
+- 🐕 | Let a friendly dog choose the direction of your next block.
+- 🏛️ | Find a building with an unusual detail above eye level.
+- 🧺 | Visit a local shop and notice the most colourful thing inside.
+- 🪧 | Follow a sign pointing somewhere you have not been.
+- 🕊️ | Pause wherever you see a bird and listen for one full minute.
+- 🌳 | Find the widest tree you can spot and walk around it once.
+- 🧩 | Search for a pattern repeated in three different places.
+- ☕ | Walk until you can smell coffee, tea, or something baking.
+- 📮 | Find a mailbox and imagine the most surprising letter it could hold.
+- 🐾 | Follow animal tracks, paw prints, or clues for as long as they last.
+- 🌈 | Find something in every colour of the rainbow.
+- 🛤️ | Take a route that runs beside rails, a trail, or a long straight line.
+- 🎈 | Look for something that is floating, flying, or tied up high.
+- 🌻 | Find a flower growing somewhere it seems determined not to.
+- 🧤 | Notice five different textures without using your hands.
+- 🧱 | Find a wall with character: moss, murals, cracks, or old paint.
+- 🔔 | Walk until you hear a bell, chime, or unexpected metallic sound.
+- 🏞️ | Find a place where the view opens up farther than usual.
+- 🧭 | At the next intersection, go whichever way feels most curious.
+- 🐌 | Move at snail pace for one block and notice what changes.
+- 🎭 | Find a face in an object, building, or patch of nature.
+- 🧊 | Seek out the coolest-looking patch of shade on your route.
+- 🔍 | Hunt for something shaped like a heart.
+- 🧨 | Take the liveliest route home, even if it adds five minutes.
+- 📚 | Find a little free library, bookshop, or a title you would read.
+- 🏔️ | Walk toward the highest point you can see nearby.
+- 🧘 | Find a quiet corner and take ten slow breaths.
+- 🦆 | Follow the route a duck might take toward water.
+- 🪁 | Look up until you find something moving in the sky.
+- 🍃 | Catch a leaf, seed, or petal in motion with your eyes.
+- 🏠 | Find a house detail you would borrow for your dream home.
+- 🛴 | Count five different ways people are getting around today.
+- 🧵 | Follow one colour until you spot it in five different places.
+- 🐝 | Find a plant that would make a good stop for a pollinator.
+- 🎂 | Walk until you find something that looks like it belongs at a celebration.
+- 🚲 | Take a street that would make a pleasant bicycle ride.
+- 📷 | Capture a photo of a shadow with an interesting shape.
+- 🧭 | Turn toward whichever direction has the best light.
+- 🌊 | Find a ripple, reflection, or shimmer in water or glass.
+- 🪨 | Pick out the smallest interesting rock you can find, then leave it there.
+- 🧊 | Find something that looks unexpectedly blue.
+- 🥨 | Follow the smell of a snack for one block, then choose your own route.
+- 🪑 | Find the most inviting place to sit outside and take a short pause.
+- 🎨 | Spot a colour combination you want to remember.
+- 🦸 | Walk with superhero posture for one block.
+- 🌉 | Cross a bridge, tunnel, or threshold you usually pass by.
+- 🧠 | Make up a name for a street, alley, or path you discover.
+- 🐦 | Find a perch that has a better view than you do.
+- 🗿 | Look for something older than everyone walking past it.
+- 🧃 | Find a place that makes you want a cold drink.
+- 🌙 | Take an evening walk and count the lights turning on.
+- 🌞 | Seek out a patch of sunlight and stand in it for a moment.
+- 🍂 | Find the first sign of the season changing.
+- 🧯 | Look for a bright red object in an unexpected place.
+- 🧭 | Make every second turn a left turn for ten minutes.
+- 🐟 | Walk as if you are following an invisible stream through the city.
+- 🎼 | Notice the rhythm made by footsteps, traffic, and wind.
+- 🪞 | Find a reflection that makes an ordinary view feel strange.
+- 🗺️ | Draw a tiny map from memory after you return home.
+- 🏮 | Look for the warmest-looking light after sunset.
+- 🐿️ | Find evidence that a small creature has been busy nearby.
+- 🌾 | Seek out a place where something is growing wild.
+- 📍 | Visit the nearest place you have meant to check out.
+- 🧳 | Walk like a tourist and take one photo of a local landmark.
+- 🎲 | At the next three intersections, use a random number to choose a turn.
+- 🧁 | Find the sweetest-looking thing you can see without buying it.
+- 🌬️ | Walk into the wind for five minutes, then turn around and notice the difference.
+- 🧸 | Look for something that makes the neighbourhood feel playful.
+- 🛟 | Find something circular that could be a life preserver in a giant's world.
+- 🧼 | Notice a clean, orderly detail amid everything else.
+- 🦋 | Find something delicate that survived in a busy place.
+- 🧭 | Choose a destination only after you have walked five minutes.
+- 🏃 | Take one block at a brisk pace, then return to a relaxed stroll.
+- 🪴 | Find a plant someone is caring for with obvious affection.
+- 🖼️ | Find a view that would make a postcard.
+- 🧊 | Look for an object with a surface that catches the light.
+- 🏷️ | Read three business names and pick your favourite.
