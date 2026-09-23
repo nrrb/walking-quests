@@ -25,37 +25,17 @@ const QUESTS = parseQuests(questMarkdown)
 const STORAGE_KEY = "walkquest_completions"
 const QUEST_SELECTIONS_KEY = "walkquest_selections"
 const COMPLETION_TIMES_KEY = "walkquest_completion_times"
+const HISTORY_RESET_KEY = "walkquest_history_reset_v1"
 
 function loadCompletions(): Record<string, string> {
   try {
-    const existing: Record<string, string> = JSON.parse(
-      localStorage.getItem(STORAGE_KEY) || "{}",
-    )
-    const now = new Date()
-    const y = now.getFullYear()
-    const m = now.getMonth()
-    const today = now.getDate()
-    // Backfill past days this month
-    for (let d = 1; d < today; d++) {
-      const k = dateKey(y, m, d)
-      if (!(k in existing)) {
-        const hash = (y * 10000 + (m + 1) * 100 + d) % 7
-        if (hash !== 2) existing[k] = questForDate(y, m, d).emoji
-      }
+    if (!localStorage.getItem(HISTORY_RESET_KEY)) {
+      localStorage.removeItem(STORAGE_KEY)
+      localStorage.removeItem(COMPLETION_TIMES_KEY)
+      localStorage.setItem(HISTORY_RESET_KEY, "true")
     }
-    // Backfill last month
-    const lm = m === 0 ? 11 : m - 1
-    const ly = m === 0 ? y - 1 : y
-    const daysInLast = new Date(ly, lm + 1, 0).getDate()
-    for (let d = 1; d <= daysInLast; d++) {
-      const k = dateKey(ly, lm, d)
-      if (!(k in existing)) {
-        const hash = (ly * 10000 + (lm + 1) * 100 + d) % 5
-        if (hash !== 3) existing[k] = questForDate(ly, lm, d).emoji
-      }
-    }
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(existing))
-    return existing
+
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}")
   } catch {
     return {}
   }
@@ -63,40 +43,17 @@ function loadCompletions(): Record<string, string> {
 function saveCompletions(c: Record<string, string>) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(c))
 }
-function generatedCompletionTime(key: string) {
-  const [year, month, day] = key.split("-").map(Number)
-  const minuteOfDay = ((year * 10000 + month * 100 + day) % 600) + 540
-  return new Date(
-    year,
-    month - 1,
-    day,
-    Math.floor(minuteOfDay / 60),
-    minuteOfDay % 60,
-  ).toISOString()
-}
-function loadCompletionTimes(completions: Record<string, string>) {
+function loadCompletionTimes() {
   try {
     const stored: Record<string, unknown> = JSON.parse(
       localStorage.getItem(COMPLETION_TIMES_KEY) || "{}",
     )
-    const times = Object.fromEntries(
+    return Object.fromEntries(
       Object.entries(stored).filter(
         ([, time]) =>
           typeof time === "string" && !Number.isNaN(new Date(time).getTime()),
       ),
     ) as Record<string, string>
-    let updated = false
-
-    for (const key of Object.keys(completions)) {
-      if (!times[key]) {
-        times[key] = generatedCompletionTime(key)
-        updated = true
-      }
-    }
-
-    if (updated)
-      localStorage.setItem(COMPLETION_TIMES_KEY, JSON.stringify(times))
-    return times
   } catch {
     return {}
   }
@@ -201,7 +158,7 @@ export default function App() {
   const [completions, setCompletions] =
     useState<Record<string, string>>(loadCompletions)
   const [completionTimes, setCompletionTimes] =
-    useState<Record<string, string>>(() => loadCompletionTimes(completions))
+    useState<Record<string, string>>(loadCompletionTimes)
   const [questSelections, setQuestSelections] =
     useState<Record<string, number>>(loadQuestSelections)
   const [viewYear, setViewYear] = useState(todayY)
