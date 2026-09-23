@@ -15,6 +15,20 @@ Create a production build with:
 npm run build
 ```
 
+## Publish with Surge
+
+Publish the production build to Surge with:
+
+```bash
+npm run publish
+```
+
+This deploys to `walkingquests.surge.sh`.
+
+### If you fork this project
+
+Before publishing your fork, change `walkingquests.surge.sh` in the `publish` script in `package.json` to a Surge domain you control. Surge domains are shared globally, so a fork needs its own unique domain.
+
 ## Editing quests
 
 The quest pool is in [src/content/mini-quests.md](src/content/mini-quests.md). Add or edit one quest per line using this format:
